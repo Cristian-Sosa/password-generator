@@ -1,12 +1,18 @@
-function ToggleButton({ text, id }) {
-
+function ToggleButton({ text, id, handle }) {
   return (
     <div className="ToggleButton">
-      <input className="form-check-input" type="checkbox" role="switch" id={ id } />
-      <label className="form-check-label" htmlFor={ id }>{ text }</label>
+      <input
+        onChange={handle}
+        className="form-check-input"
+        type="checkbox"
+        role="switch"
+        id={id}
+      />
+      <label className="form-check-label" htmlFor={id}>
+        {text}
+      </label>
     </div>
-  )
-
+  );
 }
 
 export default ToggleButton;

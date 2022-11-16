@@ -1,7 +1,9 @@
-function PassShow() {
+function PassShow({ pass }) {
   return (
     <div className="PassContainer">
-        <span className="PassShow">Generate Password</span>
+      <span className="PassShow">
+        {pass ? pass : "Click en Generar contraseña"}
+      </span>
     </div>
   );
 }
