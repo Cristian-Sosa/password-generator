@@ -2,7 +2,7 @@ function RangeInput({ range, setRange }) {
   return (
     <div className="Length">
       <span className="Length_title">
-        Length: <b id="LengthValue">{range}</b>
+        Caracteres: <b id="LengthValue">{range}</b>
       </span>
       <div className="RangeInput">
         <label htmlFor="lenght" className="form-label">
